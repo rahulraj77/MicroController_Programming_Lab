@@ -1,4 +1,4 @@
-// Interfacing push button and LED's
+// Interfacing push button with LED's
 #include "main.h"
 
 void SystemClock_Config(void);
