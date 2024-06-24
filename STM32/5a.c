@@ -6,7 +6,7 @@ void Step_Sequence2(void);
 void Step_Sequence3(void);
 void Step_Sequence4(void);
 
-GPIO_Pinstate direction;
+GPIO_PinState direction;
 
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
