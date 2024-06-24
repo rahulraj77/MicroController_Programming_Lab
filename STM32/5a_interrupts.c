@@ -1,6 +1,11 @@
 // Alternate program to control motors using Interrupts
 #include "main.h"
 
+void Step_Sequence1(void);
+void Step_Sequence2(void);
+void Step_Sequence3(void);
+void Step_Sequence4(void);
+
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 
@@ -9,7 +14,7 @@ uint8_t flag = 0;
 void HAL_GPIO_EXT1_Callback(uint16_t GPIO_Pin)
 {
     UNUSED(GPIO_Pin);
-    flag = -flag;
+    flag = ~flag;
 }
 
 int main(void)
