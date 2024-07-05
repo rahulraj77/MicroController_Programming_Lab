@@ -11,7 +11,7 @@ static void MX_GPIO_Init(void);
 
 uint8_t flag = 0;
 
-void HAL_GPIO_EXT1_Callback(uint16_t GPIO_Pin)
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
     UNUSED(GPIO_Pin);
     flag = ~flag;
