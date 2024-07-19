@@ -32,6 +32,8 @@ int main(void)
 		for(i = 0; i < analogValue; i++);
 		for(i = 0; i < analogValue; i++);
 		analogValue = (~analogValue) & 0x0FFF; // Masking upper four bits.
+
+	  	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, GPIO_PIN_RESET);
 		for(i = 0; i < analogValue; i++);
 		for(i = 0; i < analogValue; i++);
   }
