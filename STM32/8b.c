@@ -20,8 +20,8 @@ void HAL_GPIO_EXT1_Callback(uint16_t GPIO_Pin)
 int main(void)
 {
 	LIS3DSH_InitTyeDef myaccelo_config;
-  HAL_Init();
-  SystemClock_Config();
+	HAL_Init();
+	SystemClock_Config();
 
 	myaccelo_config.dataRate = LIS3DSH_DATARATE_12_5;
 	myaccelo_config.fullScale = LIS3DSH_FULLSCALE_4;
@@ -35,11 +35,11 @@ int main(void)
 
   while (1)
   {
-		if(flag == 1)
-    {
-      flag = 0;
-			myData = LIS3DSH_GetDataScaled();
-			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
-		}
+	  if(flag == 1)
+	  {
+		  flag = 0;
+		  myData = LIS3DSH_GetDataScaled();
+		  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
+	  }
   }
 }
