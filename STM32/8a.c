@@ -23,7 +23,7 @@ int main(void)
 
   MX_GPIO_Init();
   MX_SPI1_Init();
-	LIS3DSH_Init(&hspi1), &myaccelo_config);
+	LIS3DSH_Init(&hspi1, &myaccelo_config);
 
   while (1)
   {
