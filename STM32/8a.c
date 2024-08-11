@@ -27,10 +27,10 @@ int main(void)
 
   while (1)
   {
-		if(LIS3DSH_PollDRDY(1000) == true)
-    {
+	  if(LIS3DSH_PollDRDY(1000) == true)
+	  {
 			myData = LIS3DSH_GetDataScaled();
 			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
-		}
+	  }
   }
 }
