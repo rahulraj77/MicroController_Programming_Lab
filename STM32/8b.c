@@ -19,7 +19,7 @@ void HAL_GPIO_EXT1_Callback(uint16_t GPIO_Pin)
 
 int main(void)
 {
-	LIS3DSH_InitTyeDef myaccelo_config;
+	LIS3DSH_InitTypeDef myaccelo_config;
 	HAL_Init();
 	SystemClock_Config();
 
