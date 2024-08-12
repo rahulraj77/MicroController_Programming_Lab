@@ -11,7 +11,7 @@ LIS3DSH_DataScaled myData;
 
 int main(void)
 {
-	LIS3DSH_InitTyeDef myaccelo_config;
+	LIS3DSH_InitTypeDef myaccelo_config;
   HAL_Init();
   SystemClock_Config();
 
@@ -19,7 +19,7 @@ int main(void)
 	myaccelo_config.fullScale = LIS3DSH_FULLSCALE_4;
 	myaccelo_config.antiAliasingBW = LIS3DSH_FILTER_BW_50;
 	myaccelo_config.enableAxes = LIS3DSH_XYZ_ENABLE;
-	myaccelo_config.interruptEnable = False;
+	myaccelo_config.interruptEnable = false;
 
   MX_GPIO_Init();
   MX_SPI1_Init();
