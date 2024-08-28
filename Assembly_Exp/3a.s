@@ -17,7 +17,7 @@ Reset_Handler
 Reset_Handler_End
 	LDR R0, = Array
 	MOV R1, #Len
-	MOV R2, #9
+	MOV R2, #55
 	BL Linear_Search_Start
 stop B stop
 Linear_Search_Start
